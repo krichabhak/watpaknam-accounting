@@ -1,16 +1,9 @@
-import type { Metadata } from 'next';
-import { Inter, Noto_Sans_Thai } from 'next/font/google';
-import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
-const notoSansThai = Noto_Sans_Thai({ subsets: ['thai'], weight: ['400', '500', '600', '700', '900'] });
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'วัดปากน้ำ - ระบบบัญชีการเงิน',
-  description: 'ระบบบัญชีการเงินแบบครบครันสำหรับการจัดการและรายงานทางการเงิน',
-  icons: {
-    icon: '🏯',
-  },
+  title: "วัดปากน้ำ - ระบบบัญชี",
+  description: "ระบบจัดการบัญชีรายรับรายจ่ายแบบมืออาชีพสำหรับวัดปากน้ำ",
 };
 
 export default function RootLayout({
@@ -20,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="th">
-      <body className={`${notoSansThai.className} bg-gray-50`}>
+      <body>
         {children}
       </body>
     </html>
